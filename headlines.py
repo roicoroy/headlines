@@ -1,12 +1,9 @@
-from flask import Flask
+from flask import Flask 
+app = Flask(__name__) 
 
-app = Flask(__name__)
+@app.route("/") 
+def get_news(): 
+    return "no news is good news" 
 
-
-@app.route("/")
-def index():
-    return "Hello, Goiabeira!! Again.. hello World!"
-
-
-if __name__ == '__main__':
+if __name__ == '__main__': 
     app.run(port=5000, debug=True)
