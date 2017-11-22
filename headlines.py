@@ -1,3 +1,5 @@
+#!/usr/local/lib/python2.7/dist-packages
+
 import feedparser
 from flask import Flask
 from flask import render_template
